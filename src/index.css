@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .paragraph-text {
+    @apply font-Inter text-slate-gray text-lg leading-7;
+  }
+
+  .small-paragraph {
+    @apply font-Inter text-slate-gray text-[16px] leading-[160%] mt-6;
+  }
+  .nav-text {
+    @apply font-Inter text-[#656B61] text-[16px] leading-[24px] mb-3;
+  }
+}
